@@ -17,3 +17,13 @@ CREATE TABLE customers(
     customer_address VARCHAR(222) NOT NULL,
     PRIMARY KEY(customer_id)
 );
+
+CREATE TABLE orders(
+	order_id INT AUTO_INCREMENT,
+	date_booking DATETIME NOT NULL,
+	fk_film_id INT,
+    fk_customer_id INT,
+	PRIMARY KEY(order_id),
+	FOREIGN KEY(fk_film_id) REFERENCES films(film_id),
+    FOREIGN KEY(fk_customer_id) REFERENCES customers(customer_id)
+);
