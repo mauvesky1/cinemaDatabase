@@ -12,16 +12,17 @@ CREATE TABLE films(
 );
 
 CREATE TABLE customers(
-
+ 
     customer_id INT AUTO_INCREMENT,
     customer_name VARCHAR(222) NOT NULL,
     customer_address VARCHAR(222) NOT NULL,
+    new_customer boolean,
     PRIMARY KEY(customer_id)
-)
+);
 
 CREATE TABLE orders(
 	order_id INT AUTO_INCREMENT,
-	date_booking DATETIME,
+	date_booking DATETIME NOT NULL,
 	fk_film_id INT,
     fk_customer_id INT,
 	PRIMARY KEY(order_id),
