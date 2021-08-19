@@ -12,11 +12,10 @@ CREATE TABLE films(
 );
 
 CREATE TABLE customers(
-    --customer id // name // address // new member boolean
+
     customer_id INT AUTO_INCREMENT,
     customer_name VARCHAR(222) NOT NULL,
     customer_address VARCHAR(222) NOT NULL,
-    new_customer boolean,
     PRIMARY KEY(customer_id)
 )
 
