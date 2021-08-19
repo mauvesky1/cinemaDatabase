@@ -10,3 +10,11 @@ INSERT INTO customers(
 VALUES("Bob", "742 EverGreen Terrace"),
 ("Sally", "Caprica Drive"),
 ("Angelika", "Pickles Lane");
+
+INSERT INTO orders(
+    date_booking, fk_film_id, fk_customer_id
+)
+VALUES("'1000-01-01 00:00:00'", "1"),
+("'1000-01-01 00:00:00'", "1"),
+("'1000-01-01 00:00:00'", "1");
+
