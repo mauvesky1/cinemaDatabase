@@ -10,3 +10,10 @@ CREATE TABLE films(
     screen_no INT,
     PRIMARY KEY(film_id)
 );
+
+CREATE TABLE customers(
+    customer_id INT AUTO_INCREMENT,
+    customer_name VARCHAR(222) NOT NULL,
+    customer_address VARCHAR(222) NOT NULL,
+    PRIMARY KEY(customer_id)
+);
