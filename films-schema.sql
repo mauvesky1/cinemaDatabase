@@ -26,7 +26,7 @@ CREATE TABLE orders(
 	fk_film_id INT,
     fk_customer_id INT,
 	PRIMARY KEY(order_id),
-	FOREIGN KEY(fk_film_id) REFERENCES films(film_id)
+	FOREIGN KEY(fk_film_id) REFERENCES films(film_id),
     FOREIGN KEY(fk_customer_id) REFERENCES customers(customer_id)
 );
 
