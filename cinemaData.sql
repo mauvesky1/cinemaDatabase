@@ -9,4 +9,4 @@ INSERT INTO customers(
 )
 VALUES("Bob", "742 EverGreen Terrace"),
 ("Sally", "Caprica Drive"),
-("Angelika", "Pickles Lane")
+("Angelika", "Pickles Lane");
