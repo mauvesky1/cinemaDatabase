@@ -21,7 +21,7 @@ CREATE TABLE customers(
 
 CREATE TABLE orders(
 	order_id INT AUTO_INCREMENT,
-	date_booking DATETIME NOT NULL,
+	date_booking DATETIME,
 	fk_film_id INT,
     fk_customer_id INT,
 	PRIMARY KEY(order_id),
